@@ -1,0 +1,235 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+header section.top-bar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 70px;
+  width: 100vw;
+  padding: 0 15px;
+  background-color: #fff;
+  z-index: 1;
+}
+
+header section.top-bar div.hamburger {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 45px;
+  height: 45px;
+  border: 1px solid #969696;
+  border-radius: 50%;
+}
+
+header section.top-bar div.hamburger span {
+  position: relative;
+  left: 0;
+  top: 0;
+  display: block;
+  height: 2px;
+  width: 16px;
+  background-color: #969696;
+}
+
+header section.top-bar div.hamburger span::before {
+  content: '';
+  display: block;
+  height: 2px;
+  width: 16px;
+  background-color: #969696;
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+}
+
+header section.top-bar div.hamburger span::after {
+  content: '';
+  display: block;
+  height: 2px;
+  width: 16px;
+  background-color: #969696;
+  -webkit-transform: translateY(3px);
+          transform: translateY(3px);
+}
+
+header nav {
+  display: none;
+}
+
+header div.hero {
+  height: 180px;
+  margin-top: 70px;
+  background-image: url(../images/hero-xs.png);
+  background-repeat: no-repeat;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+  height: 235vh;
+}
+
+main h1 {
+  position: relative;
+  left: 0;
+  top: 0;
+  padding: 0 15px;
+  margin-top: 20px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 34px;
+  letter-spacing: 1px;
+  color: #3FA9F5;
+}
+
+main h1:before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0px;
+  top: -40px;
+  width: 70vw;
+  height: 30px;
+  background-color: #fff;
+}
+
+main div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -ms-flex-preferred-size: 75vw;
+      flex-basis: 75vw;
+}
+
+main div h2 {
+  margin-bottom: 10px;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 22px;
+}
+
+main div p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  color: #707070;
+}
+
+main div.roof {
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  height: 441px;
+  -ms-flex-preferred-size: 100vw;
+      flex-basis: 100vw;
+  padding-top: 65px;
+  margin-bottom: 2px;
+  background-image: url(../images/roof-xs.png);
+}
+
+main div.roof h2,
+main div.roof p {
+  margin: 0 auto;
+  -ms-flex-preferred-size: 75vw;
+      flex-basis: 75vw;
+}
+
+main div.roof h2 {
+  margin-bottom: 10px;
+}
+
+main div.roof p {
+  color: #fff;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -ms-flex-line-pack: distribute;
+      align-content: space-around;
+  height: 155vh;
+  padding: 0 15px;
+  background-color: #000;
+}
+
+footer h3,
+footer h4 {
+  font-family: 'Roboto', sans-serif;
+  color: #fff;
+}
+
+footer div {
+  width: 100vw;
+}
+
+footer h3 {
+  margin-top: 35px;
+  font-size: 32px;
+}
+
+footer h5 {
+  margin-bottom: 12px;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 15px;
+  letter-spacing: 1px;
+  color: #919191;
+  text-transform: uppercase;
+}
+
+footer h4 {
+  width: 41vw;
+  margin-bottom: 8px;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 22px;
+}
+
+footer h4.nip {
+  text-transform: uppercase;
+  width: 45vw;
+}
+
+footer h6 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 13px;
+  color: #707070;
+}
