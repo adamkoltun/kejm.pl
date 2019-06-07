@@ -3,16 +3,16 @@ main {
     flex-flow: row wrap;
     justify-content: center;
     align-content: space-between;
-    height: 235vh;
+    height: 280vh;
 
     h1 {
         position: relative;
         left: 0;
         top: 0;
-        padding: 0 15px;
+        padding: 0 20px;
         margin-top: 20px;
         font-family: 'Roboto', sans-serif;
-        font-size: 34px;
+        font-size: 3.4rem;
         letter-spacing: 1px;
         color: #3FA9F5;
     }
@@ -31,44 +31,52 @@ main {
     div {
         display: flex;
         flex-flow: row wrap;
-        align-content: center;
         flex-basis: 75vw;
 
         h2 {
             margin-bottom: 10px;
             font-family: 'Roboto Condensed', sans-serif;
-            font-size: 22px;
+            font-size: 2.2rem;
         }
 
         p {
             font-family: 'Roboto', sans-serif;
-            font-size: 14px;
+            font-size: 1.4rem;
             line-height: 20px;
             color: #707070;
         }
     }
 
-    div.roof {
-        align-content: flex-start;
-        align-self: flex-end;
-        height: 441px;
-        flex-basis: 100vw;
-        padding-top: 65px;
-        margin-bottom: 2px;
-        background-image: url(../images/roof-xs.png);
+    @media(min-width: 360px) {
+        height: 238vh;
 
-        h2,
-        p {
-            margin: 0 auto;
-            flex-basis: 75vw;
+        h1 {
+            padding: 0 30px;
         }
 
-        h2 {
-            margin-bottom: 10px;
+        div {
+            flex-basis: 70vw;
+        }
+    }
+
+    @media(min-width: 460px) {
+        height: 196vh;
+
+        h1 {
+            padding: 0 45px;
+            margin-top: 15px;
+            font-size: 4.4rem;
         }
 
-        p {
-            color: #fff;
+        div {
+            h2 {
+                margin-bottom: 15px;
+                font-size: 2.4rem;
+            }
+
+            p {
+                font-size: 1.6rem;
+            }
         }
     }
 }
