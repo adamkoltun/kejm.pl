@@ -210,7 +210,7 @@ main div h2 {
 main div p {
   font-family: 'Roboto', sans-serif;
   font-size: 1.4rem;
-  line-height: 20px;
+  line-height: 150%;
   color: #707070;
 }
 
@@ -227,9 +227,15 @@ main div p {
   }
 }
 
+@media (min-width: 411px) {
+  main {
+    height: 200vh;
+  }
+}
+
 @media (min-width: 460px) {
   main {
-    height: 196vh;
+    height: 210vh;
   }
   main h1 {
     padding: 0 45px;
@@ -242,6 +248,37 @@ main div p {
   }
   main div p {
     font-size: 1.6rem;
+  }
+}
+
+@media (min-width: 600px) {
+  main {
+    height: 180vh;
+  }
+}
+
+@media (min-width: 768px) {
+  main {
+    height: 235vh;
+  }
+  main h1 {
+    padding: 0 60px;
+    font-size: 5.4rem;
+  }
+  main div h2 {
+    font-size: 3.4rem;
+  }
+  main div p {
+    font-size: 2.2rem;
+  }
+}
+
+@media (min-width: 800px) {
+  main {
+    height: 215vh;
+  }
+  main h1 {
+    font-size: 6.4rem;
   }
 }
 
@@ -287,7 +324,6 @@ footer h5 {
 footer h4 {
   font-size: 1.6rem;
   font-weight: 300;
-  line-height: 22px;
 }
 
 footer .office h4:nth-child(4),
@@ -308,9 +344,21 @@ footer h6 {
   }
 }
 
+@media (min-width: 375px) {
+  footer {
+    height: 110vh;
+  }
+}
+
+@media (min-width: 411px) {
+  footer {
+    height: 100vh;
+  }
+}
+
 @media (min-width: 460px) {
   footer {
-    height: 105vh;
+    height: 110vh;
     padding: 0 45px;
   }
   footer h3 {
@@ -324,5 +372,33 @@ footer h6 {
   }
   footer h6 {
     font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  footer {
+    height: 120vh;
+    padding: 0 60px;
+  }
+  footer h3 {
+    font-size: 5.4rem;
+  }
+  footer h4 {
+    font-size: 2.6rem;
+  }
+  footer h5 {
+    font-size: 2.4rem;
+  }
+  footer h6 {
+    font-size: 2.2rem;
+  }
+}
+
+@media (min-width: 800px) {
+  footer {
+    height: 110vh;
+  }
+  footer h3 {
+    font-size: 6.8rem;
   }
 }
