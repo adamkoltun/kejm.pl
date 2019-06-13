@@ -1,11 +1,11 @@
-// Mobile menu & hamburger
+//  Navigationenu & hamburger
 
 const hamburger = document.querySelector('.hamburger');
-const navMobile = document.querySelector('nav.mobile')
+const menu = document.querySelector('nav')
 
 hamburger.addEventListener('click', () => {
     hamburger.classList.toggle('on');
-    navMobile.classList.toggle('active');
+    menu.classList.toggle('active');
 })
 
 // Navigation
@@ -21,7 +21,7 @@ scrollTo = (element) => {
 }
 
 closeNav = () => {
-    navMobile.classList.remove('active');
+    menu.classList.remove('active');
     hamburger.classList.remove('on');
 }
 
@@ -35,4 +35,3 @@ nav.forEach(anchor => {
         })
     }
 })
-
