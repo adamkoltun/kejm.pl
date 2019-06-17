@@ -1,4 +1,4 @@
-//  Navigationenu & hamburger
+//  Menu & hamburger
 
 const hamburger = document.querySelector('.hamburger');
 const menu = document.querySelector('nav')

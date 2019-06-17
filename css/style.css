@@ -154,7 +154,7 @@ header h1 {
   position: relative;
   left: 0;
   top: 0;
-  padding: 0 20px;
+  padding-left: 20px;
   margin: 20px 0;
   font-family: 'Roboto', sans-serif;
   font-size: 3.4rem;
@@ -171,6 +171,48 @@ header h1:before {
   width: 70vw;
   height: 30px;
   background-color: #fff;
+}
+
+@media (orientation: landscape) {
+  header nav ul {
+    height: 40vh;
+  }
+  header h1 {
+    width: 80vw;
+  }
+}
+
+@media (min-width: 360px) and (orientation: portrait) {
+  header h1 {
+    width: 85vw;
+  }
+}
+
+@media (min-width: 460px) {
+  header h1 {
+    width: 75vw;
+    padding-left: 35px;
+    font-size: 4rem;
+  }
+}
+
+@media (min-width: 480px) and (orientation: portrait) {
+  header nav ul {
+    height: 25vh;
+  }
+}
+
+@media (min-width: 854px) and (orientation: landscape) {
+  header nav ul {
+    height: 30vh;
+  }
+  header nav ul li a {
+    font-size: 1.8rem;
+  }
+  header h1 {
+    padding-left: 45px;
+    font-size: 4.6rem;
+  }
 }
 
 @media (min-width: 1024px) and (orientation: landscape) {
@@ -241,6 +283,58 @@ main div p {
   color: #707070;
 }
 
+@media (orientation: landscape) {
+  main {
+    height: 220vh;
+  }
+  main div {
+    -ms-flex-preferred-size: 65vw;
+        flex-basis: 65vw;
+  }
+}
+
+@media (min-width: 360px) and (orientation: portrait) {
+  main {
+    height: 125vh;
+  }
+}
+
+@media (min-width: 640px) and (orientation: landscape) {
+  main {
+    height: 125vh;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  main div {
+    -ms-flex-preferred-size: 35vw;
+        flex-basis: 35vw;
+  }
+}
+
+@media (min-width: 460px) and (orientation: portrait) {
+  main {
+    height: 100vh;
+  }
+  main div h2 {
+    font-size: 2.4rem;
+  }
+  main div p {
+    font-size: 1.6rem;
+  }
+}
+
+@media (min-width: 854px) and (orientation: landscape) {
+  main {
+    height: 110vh;
+  }
+  main div h2 {
+    font-size: 2.4rem;
+  }
+  main div p {
+    font-size: 1.6rem;
+  }
+}
+
 @media (min-width: 1024px) and (orientation: landscape) {
   main {
     margin-left: 20vw;
@@ -264,7 +358,7 @@ footer {
   -ms-flex-line-pack: distribute;
       align-content: space-around;
   height: 155vh;
-  padding: 0 15px;
+  padding-left: 20px;
   background-color: #000;
 }
 
@@ -306,6 +400,75 @@ footer h6 {
   font-family: 'Roboto', sans-serif;
   font-size: 1.3rem;
   color: #707070;
+}
+
+@media (orientation: landscape) {
+  footer {
+    height: 230vh;
+  }
+  footer h3 {
+    -ms-flex-preferred-size: 70vw;
+        flex-basis: 70vw;
+  }
+}
+
+@media (min-width: 360px) and (orientation: portrait) {
+  footer {
+    height: 140vh;
+  }
+  footer h3 {
+    -ms-flex-preferred-size: 80vw;
+        flex-basis: 80vw;
+  }
+}
+
+@media (min-width: 640px) and (orientation: landscape) {
+  footer {
+    padding-left: 35px;
+  }
+  footer h3 {
+    -ms-flex-preferred-size: 65vw;
+        flex-basis: 65vw;
+    font-size: 3.6rem;
+  }
+}
+
+@media (min-width: 460px) and (orientation: portrait) {
+  footer {
+    height: 110vh;
+    padding-left: 35px;
+  }
+  footer h3 {
+    font-size: 3.8rem;
+  }
+  footer h4 {
+    font-size: 1.8rem;
+  }
+  footer h5 {
+    font-size: 1.7rem;
+  }
+  footer h6 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 854px) and (orientation: landscape) {
+  footer {
+    height: 180vh;
+    padding-left: 45px;
+  }
+  footer h3 {
+    font-size: 3.8rem;
+  }
+  footer h4 {
+    font-size: 1.8rem;
+  }
+  footer h5 {
+    font-size: 1.7rem;
+  }
+  footer h6 {
+    font-size: 1.5rem;
+  }
 }
 
 @media (min-width: 1024px) and (orientation: landscape) {

@@ -3,7 +3,7 @@ footer {
     flex-flow: row wrap;
     align-content: space-around;
     height: 155vh;
-    padding: 0 15px;
+    padding-left: 20px;
     background-color: #000;
 
     h3,
@@ -44,6 +44,73 @@ footer {
         font-family: 'Roboto', sans-serif;
         font-size: 1.3rem;
         color: #707070;
+    }
+
+    @media (orientation: landscape) {
+        height: 230vh;
+
+        h3 {
+            flex-basis: 70vw;
+        }
+    }
+
+    @media (min-width: 360px) and (orientation: portrait) {
+        height: 140vh;
+
+        h3 {
+            flex-basis: 80vw;
+        }
+    }
+
+    @media (min-width: 640px) and (orientation: landscape) {
+        padding-left: 35px;
+
+        h3 {
+            flex-basis: 65vw;
+            font-size: 3.6rem;
+        }
+    }
+
+    @media (min-width: 460px) and (orientation: portrait) {
+        height: 110vh;
+        padding-left: 35px;
+
+        h3 {
+            font-size: 3.8rem;
+        }
+
+        h4 {
+            font-size: 1.8rem;
+        }
+
+        h5 {
+            font-size: 1.7rem;
+        }
+
+        h6 {
+            font-size: 1.5rem;
+        }
+    }
+
+    @media (min-width: 854px) and (orientation: landscape) {
+        height: 180vh;
+        padding-left: 45px;
+
+        h3 {
+            font-size: 3.8rem;
+        }
+
+        h4 {
+            font-size: 1.8rem;
+        }
+
+        h5 {
+            font-size: 1.7rem;
+        }
+
+        h6 {
+            font-size: 1.5rem;
+        }
     }
 
     @media(min-width: 1024px) and (orientation: landscape) {

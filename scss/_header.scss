@@ -110,7 +110,7 @@ header {
         position: relative;
         left: 0;
         top: 0;
-        padding: 0 20px;
+        padding-left: 20px;
         margin: 20px 0;
         font-family: 'Roboto', sans-serif;
         font-size: 3.4rem;
@@ -127,6 +127,61 @@ header {
         width: 70vw;
         height: 30px;
         background-color: #fff;
+    }
+
+    @media(orientation: landscape) {
+
+        nav {
+            ul {
+                height: 40vh;
+            }
+        }
+
+        h1 {
+            width: 80vw;
+        }
+    }
+
+    @media (min-width: 360px) and (orientation: portrait) {
+        h1 {
+            width: 85vw;
+        }
+    }
+
+    @media (min-width: 460px) {
+        h1 {
+            width: 75vw;
+            padding-left: 35px;
+            font-size: 4rem;
+        }
+    }
+
+    @media(min-width: 480px) and (orientation: portrait) {
+        nav {
+            ul {
+                height: 25vh;
+            }
+        }
+    }
+
+    @media (min-width: 854px) and (orientation: landscape) {
+        nav {
+            ul {
+                height: 30vh;
+
+                li {
+                    a {
+                        font-size: 1.8rem;
+                    }
+                }
+
+            }
+        }
+
+        h1 {
+            padding-left: 45px;
+            font-size: 4.6rem;
+        }
     }
 
     @media(min-width: 1024px) and (orientation: landscape) {

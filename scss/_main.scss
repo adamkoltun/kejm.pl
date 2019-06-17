@@ -24,6 +24,56 @@ main {
         }
     }
 
+    @media (orientation: landscape) {
+        height: 220vh;
+
+        div {
+            flex-basis: 65vw;
+        }
+    }
+
+    @media (min-width: 360px) and (orientation: portrait) {
+        height: 125vh;
+    }
+
+    @media (min-width: 640px) and (orientation: landscape) {
+        height: 125vh;
+        justify-content: space-around;
+
+        div {
+            flex-basis: 35vw;
+        }
+    }
+
+    @media (min-width: 460px) and (orientation:portrait) {
+        height: 100vh;
+
+        div {
+            h2 {
+                font-size: 2.4rem;
+            }
+
+            p {
+                font-size: 1.6rem;
+            }
+        }
+    }
+
+    @media (min-width: 854px) and (orientation: landscape) {
+        height: 110vh;
+
+        div {
+
+            h2 {
+                font-size: 2.4rem;
+            }
+
+            p {
+                font-size: 1.6rem;
+            }
+        }
+    }
+
     @media(min-width: 1024px) and (orientation: landscape) {
         margin-left: 20vw;
         justify-content: space-around;
