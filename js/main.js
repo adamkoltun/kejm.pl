@@ -1,7 +1,7 @@
 //  Menu & hamburger
 
 const hamburger = document.querySelector('.hamburger');
-const menu = document.querySelector('nav')
+const menu = document.querySelector('nav');
 
 hamburger.addEventListener('click', () => {
     hamburger.classList.toggle('on');
@@ -26,7 +26,8 @@ closeNav = () => {
 }
 
 nav.forEach(anchor => {
-    if (anchor.className) {
+    if (anchor.className === 'logo') return
+    else if (anchor.className) {
         anchor.addEventListener('click', function (e) {
             e.preventDefault();
             const section = document.getElementById(`${this.className}`)

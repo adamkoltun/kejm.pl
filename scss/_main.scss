@@ -1,85 +1,141 @@
 main {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-content: space-around;
-    height: 160vh;
+    img {
+        display: none;
+    }
 
-    div {
+    section {
         display: flex;
         flex-flow: row wrap;
-        flex-basis: 75vw;
+        justify-content: center;
+        align-content: space-around;
+        height: 160vh;
 
-        h2 {
-            margin-bottom: 10px;
-            font-family: 'Roboto Condensed', sans-serif;
-            font-size: 2.2rem;
-        }
+        div {
+            display: flex;
+            flex-flow: row wrap;
+            flex-basis: 75vw;
 
-        p {
-            font-family: 'Roboto', sans-serif;
-            font-size: 1.4rem;
-            line-height: 150%;
-            color: #707070;
+            h2 {
+                margin-bottom: 10px;
+                font-family: 'Roboto Condensed', sans-serif;
+                font-size: 2.2rem;
+            }
+
+            p {
+                font-family: 'Roboto', sans-serif;
+                font-size: 1.4rem;
+                line-height: 150%;
+                color: #707070;
+            }
         }
     }
 
     @media (orientation: landscape) {
-        height: 220vh;
+        section {
+            height: 220vh;
 
-        div {
-            flex-basis: 65vw;
+            div {
+                flex-basis: 65vw;
+            }
         }
+
+
     }
 
     @media (min-width: 360px) and (orientation: portrait) {
-        height: 125vh;
+        section {
+            height: 125vh;
+        }
     }
 
     @media (min-width: 640px) and (orientation: landscape) {
-        height: 125vh;
-        justify-content: space-around;
+        section {
+            height: 125vh;
+            justify-content: space-around;
 
-        div {
-            flex-basis: 35vw;
+            div {
+                flex-basis: 35vw;
+            }
         }
     }
 
     @media (min-width: 460px) and (orientation:portrait) {
-        height: 100vh;
+        section {
+            height: 100vh;
 
-        div {
-            h2 {
-                font-size: 2.4rem;
-            }
+            div {
+                h2 {
+                    font-size: 2.4rem;
+                }
 
-            p {
-                font-size: 1.6rem;
+                p {
+                    font-size: 1.6rem;
+                }
             }
         }
     }
 
     @media (min-width: 854px) and (orientation: landscape) {
-        height: 110vh;
+        section {
+            height: 110vh;
 
-        div {
+            div {
 
-            h2 {
-                font-size: 2.4rem;
+                h2 {
+                    font-size: 2.4rem;
+                }
+
+                p {
+                    font-size: 1.6rem;
+                }
             }
+        }
+    }
 
-            p {
-                font-size: 1.6rem;
+    @media (min-width: 768px) and (orientation: portrait) {
+        section {
+            div {
+                h2 {
+                    font-size: 3.4rem;
+                }
+
+                p {
+                    font-size: 2.6rem;
+                }
             }
         }
     }
 
     @media(min-width: 1024px) and (orientation: landscape) {
         margin-left: 20vw;
-        justify-content: space-around;
 
-        div {
-            flex-basis: 30vw;
+        section {
+            justify-content: space-around;
+            height: 90vh;
+
+            div {
+                flex-basis: 30vw;
+            }
+        }
+    }
+
+    @media(min-width: 1280px) {
+        display: flex;
+        align-items: center;
+        height: 90vh;
+
+        img {
+            display: block;
+            height: 495px;
+        }
+
+        section {
+            align-content: space-around;
+            height: 60vh;
+
+            div {
+                flex-basis: 20vw;
+            }
         }
     }
 }
