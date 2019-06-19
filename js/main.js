@@ -26,7 +26,7 @@ closeNav = () => {
 }
 
 nav.forEach(anchor => {
-    if (anchor.className === 'logo') return
+    if (anchor.className === 'logo' || anchor.className === 'main') return
     else if (anchor.className) {
         anchor.addEventListener('click', function (e) {
             e.preventDefault();

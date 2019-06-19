@@ -275,6 +275,19 @@ header h1:before {
     display: block;
     margin: 15vh 0 5vh 0;
   }
+  header nav ul li a {
+    padding: 1px 0;
+    -webkit-transition: border .1s ease-out;
+    transition: border .1s ease-out;
+  }
+  header nav ul li a img {
+    width: 120px;
+  }
+  header nav ul li a.main:hover,
+  header nav ul li a.about-us:hover,
+  header nav ul li a.contact:hover {
+    border-bottom: 2px solid #3FA9F5;
+  }
   header section.top-bar {
     display: none;
   }
@@ -306,6 +319,9 @@ header h1:before {
   header {
     height: 75vh;
   }
+  header nav ul li a img {
+    width: 140px;
+  }
   header h1 {
     width: 44vw;
     font-size: 4rem;
@@ -313,6 +329,12 @@ header h1:before {
 }
 
 @media (min-width: 1400px) and (orientation: landscape) {
+  header nav ul li a {
+    font-size: 2rem;
+  }
+  header nav ul li a img {
+    width: 160px;
+  }
   header h1 {
     font-size: 4.3rem;
   }
@@ -321,6 +343,12 @@ header h1:before {
 @media (min-width: 1600px) {
   header {
     height: calc(100vh - 50px);
+  }
+  header nav ul li a {
+    font-size: 2.2rem;
+  }
+  header nav ul li a img {
+    width: 165px;
   }
   header div.hero {
     margin-top: 50px;

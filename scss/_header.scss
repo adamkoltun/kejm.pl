@@ -247,6 +247,21 @@ header {
                         display: block;
                         margin: 15vh 0 5vh 0;
                     }
+
+                    a {
+                        padding: 1px 0;
+                        transition: border .1s ease-out;
+
+                        img {
+                            width: 120px;
+                        }
+                    }
+
+                    a.main:hover,
+                    a.about-us:hover,
+                    a.contact:hover {
+                        border-bottom: 2px solid #3FA9F5
+                    }
                 }
             }
         }
@@ -281,6 +296,18 @@ header {
     @media (min-width: 1280px) and (orientation: landscape) {
         height: 75vh;
 
+        nav {
+            ul {
+                li {
+                    a {
+                        img {
+                            width: 140px;
+                        }
+                    }
+                }
+            }
+        }
+
         h1 {
             width: 44vw;
             font-size: 4rem;
@@ -288,6 +315,20 @@ header {
     }
 
     @media (min-width: 1400px) and (orientation: landscape) {
+        nav {
+            ul {
+                li {
+                    a {
+                        font-size: 2rem;
+
+                        img {
+                            width: 160px;
+                        }
+                    }
+                }
+            }
+        }
+
         h1 {
             font-size: 4.3rem;
         }
@@ -295,6 +336,20 @@ header {
 
     @media (min-width: 1600px) {
         height: calc(100vh - 50px);
+
+        nav {
+            ul {
+                li {
+                    a {
+                        font-size: 2.2rem;
+
+                        img {
+                            width: 165px;
+                        }
+                    }
+                }
+            }
+        }
 
         div.hero {
             margin-top: 50px;
