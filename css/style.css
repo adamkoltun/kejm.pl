@@ -154,6 +154,10 @@ header div.hero {
   margin-top: 70px;
 }
 
+header div.hero img {
+  width: 100%;
+}
+
 header h1 {
   position: relative;
   left: 0;
@@ -196,7 +200,7 @@ header h1:before {
   header h1 {
     width: 75vw;
     padding-left: 35px;
-    font-size: 4rem;
+    font-size: 3.8rem;
   }
 }
 
@@ -214,8 +218,9 @@ header h1:before {
     font-size: 1.8rem;
   }
   header h1 {
+    width: 60vw;
     padding-left: 45px;
-    font-size: 4.6rem;
+    font-size: 3.6rem;
     text-transform: uppercase;
   }
 }
@@ -251,6 +256,9 @@ header h1:before {
 }
 
 @media (min-width: 1024px) and (orientation: landscape) {
+  header {
+    height: calc(100vh - 70px);
+  }
   header nav {
     -webkit-box-align: start;
         -ms-flex-align: start;
@@ -283,20 +291,45 @@ header h1:before {
     width: 78vw;
   }
   header h1 {
-    width: 60vw;
+    top: -10vh;
+    width: 50vw;
+    padding: 30px 0 0 45px;
     margin: 0 0 0 20vw;
-    z-index: 1;
+    background-color: #fff;
   }
   header h1:before {
-    height: 45px;
-    width: 60vw;
-    z-index: -1;
+    display: none;
   }
 }
 
 @media (min-width: 1280px) and (orientation: landscape) {
-  header h1:before {
-    width: 50vw;
+  header {
+    height: 75vh;
+  }
+  header h1 {
+    width: 44vw;
+    font-size: 4rem;
+  }
+}
+
+@media (min-width: 1400px) and (orientation: landscape) {
+  header h1 {
+    font-size: 4.3rem;
+  }
+}
+
+@media (min-width: 1600px) {
+  header {
+    height: calc(100vh - 50px);
+  }
+  header div.hero {
+    margin-top: 50px;
+  }
+  header h1 {
+    top: -14vh;
+    width: 33vw;
+    padding-top: 45px;
+    font-size: 4.6rem;
   }
 }
 
@@ -390,10 +423,10 @@ main section div p {
     height: 110vh;
   }
   main section div h2 {
-    font-size: 2.4rem;
+    font-size: 2.2rem;
   }
   main section div p {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
   }
 }
 
@@ -446,6 +479,28 @@ main section div p {
   }
 }
 
+@media (min-width: 1400px) {
+  main {
+    height: 85vh;
+  }
+  main section div h2 {
+    font-size: 2.4rem;
+  }
+  main section div p {
+    font-size: 1.6rem;
+  }
+}
+
+@media (min-width: 1600px) {
+  main img {
+    height: 632px;
+  }
+  main section div {
+    -ms-flex-preferred-size: 22vw;
+        flex-basis: 22vw;
+  }
+}
+
 footer {
   padding-left: 20px;
   background-color: #000;
@@ -458,7 +513,7 @@ footer h4 {
 }
 
 footer h3 {
-  padding: 30px 0;
+  padding: 40px 0;
   font-size: 3.2rem;
 }
 
@@ -607,11 +662,21 @@ footer h6 {
     -ms-flex-preferred-size: 20vw;
         flex-basis: 20vw;
   }
+  footer h6 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    padding: 0 10vw 5vh 0;
+  }
 }
 
 @media (min-width: 1280px) and (orientation: landscape) {
   footer h3 {
-    font-size: 4.6rem;
+    padding: 10vh 0 0 8vh;
+    font-size: 4.4rem;
     width: 58vw;
   }
   footer section.contact-us {
@@ -621,13 +686,18 @@ footer h6 {
     -ms-flex-preferred-size: 15vw;
         flex-basis: 15vw;
   }
-  footer h6 {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
-    padding: 0 10vw 10vh 0;
+}
+
+@media (min-width: 1400px) {
+  footer h3 {
+    width: 55vw;
+    font-size: 4.6rem;
+  }
+}
+
+@media (min-width: 1600px) {
+  footer h3 {
+    width: 40vw;
+    padding: 15vh 0 0 10vh;
   }
 }
