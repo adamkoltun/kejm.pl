@@ -293,7 +293,7 @@ header {
         }
     }
 
-    @media (min-width: 1280px) and (orientation: landscape) {
+    @media (min-width: 1280px) {
         height: 75vh;
 
         nav {
@@ -314,7 +314,7 @@ header {
         }
     }
 
-    @media (min-width: 1400px) and (orientation: landscape) {
+    @media (min-width: 1400px) {
         nav {
             ul {
                 li {
