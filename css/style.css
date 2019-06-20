@@ -277,8 +277,6 @@ header h1:before {
   }
   header nav ul li a {
     padding: 1px 0;
-    -webkit-transition: border .1s ease-out;
-    transition: border .1s ease-out;
   }
   header nav ul li a img {
     width: 120px;

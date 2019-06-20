@@ -1,3 +1,7 @@
+// Animations
+
+sal()
+
 //  Menu & hamburger
 
 const hamburger = document.querySelector('.hamburger');
