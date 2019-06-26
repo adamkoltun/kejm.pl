@@ -24,13 +24,13 @@ header {
             height: 30vh;
             list-style: none;
 
+            li.logo {
+                display: none;
+            }
+
             li {
                 text-align: center;
                 flex-basis: 100vw;
-
-                a.logo {
-                    display: none;
-                }
 
                 a {
                     padding: 4px 0;
@@ -248,18 +248,23 @@ header {
             ul {
                 height: 66vh;
 
-                li {
-                    a.logo {
-                        display: block;
-                        margin: 15vh 0 5vh 0;
-                    }
+                li.logo {
+                    display: block;
 
                     a {
-                        padding: 1px 0;
+                        display: block;
+                        margin: 15vh 0 5vh 0;
 
                         img {
                             width: 120px;
                         }
+                    }
+                }
+
+                li {
+
+                    a {
+                        padding: 1px 0;
                     }
 
                     a.main:hover,
@@ -303,7 +308,7 @@ header {
 
         nav {
             ul {
-                li {
+                li.logo {
                     a {
                         img {
                             width: 140px;
@@ -322,13 +327,17 @@ header {
     @media (min-width: 1400px) {
         nav {
             ul {
-                li {
+                li.logo {
                     a {
-                        font-size: 2rem;
-
                         img {
                             width: 160px;
                         }
+                    }
+                }
+
+                li {
+                    a {
+                        font-size: 2rem;
                     }
                 }
             }
