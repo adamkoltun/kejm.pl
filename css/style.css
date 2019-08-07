@@ -52,14 +52,14 @@ header nav ul {
   list-style: none;
 }
 
+header nav ul li.logo {
+  display: none;
+}
+
 header nav ul li {
   text-align: center;
   -ms-flex-preferred-size: 100vw;
       flex-basis: 100vw;
-}
-
-header nav ul li a.logo {
-  display: none;
 }
 
 header nav ul li a {
@@ -89,6 +89,10 @@ header section.top-bar {
   padding: 0 15px;
   background-color: #fff;
   z-index: 1;
+}
+
+header section.top-bar a img {
+  height: 60px;
 }
 
 header section.top-bar div.hamburger {
@@ -271,15 +275,18 @@ header h1:before {
   header nav ul {
     height: 66vh;
   }
-  header nav ul li a.logo {
+  header nav ul li.logo {
+    display: block;
+  }
+  header nav ul li.logo a {
     display: block;
     margin: 15vh 0 5vh 0;
   }
+  header nav ul li.logo a img {
+    width: 120px;
+  }
   header nav ul li a {
     padding: 1px 0;
-  }
-  header nav ul li a img {
-    width: 120px;
   }
   header nav ul li a.main:hover,
   header nav ul li a.about-us:hover,
@@ -317,7 +324,7 @@ header h1:before {
   header {
     height: 75vh;
   }
-  header nav ul li a img {
+  header nav ul li.logo a img {
     width: 140px;
   }
   header h1 {
@@ -327,11 +334,11 @@ header h1:before {
 }
 
 @media (min-width: 1400px) {
+  header nav ul li.logo a img {
+    width: 160px;
+  }
   header nav ul li a {
     font-size: 2rem;
-  }
-  header nav ul li a img {
-    width: 160px;
   }
   header h1 {
     font-size: 4.3rem;
@@ -344,9 +351,6 @@ header h1:before {
   }
   header nav ul li a {
     font-size: 2.2rem;
-  }
-  header nav ul li a img {
-    width: 165px;
   }
   header div.hero {
     margin-top: 50px;
