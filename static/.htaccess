@@ -10,3 +10,5 @@ ExpiresByType application/javascript "access 1 month"
 ExpiresDefault "access 2 days"
 </IfModule>
 ## EXPIRES CACHING ##
+
+http://clever-ptolemy-728bbd.netlify.com/* http://kejm.pl/:splat 301!
