@@ -1,0 +1,12 @@
+SetEnv PHP_VER 5_3
+SetEnv REGISTER_GLOBALS 0
+
+## EXPIRES CACHING ##
+<IfModule mod_expires.c>
+ExpiresActive On
+ExpiresByType image/png "access 1 year"
+ExpiresByType text/css "access 1 month"
+ExpiresByType application/javascript "access 1 month"
+ExpiresDefault "access 2 days"
+</IfModule>
+## EXPIRES CACHING ##
